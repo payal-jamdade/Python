@@ -1,0 +1,17 @@
+print("******************Student Information System*********************")
+
+collage_name=str(input("Enter your Collage name:"))
+name=str(input("Enter your Name:"))
+address=str(input("Enter your Address:"))
+branch=str(input("Enter your Branch:"))
+roll_number=str(input("Enter your Roll number:"))
+email_id=str(input("Enter your Email id:"))
+
+print("==============================================\n")
+print("My name :",name)
+print("My collage name :", collage_name)
+print("My address :",address)
+print("My branch :",branch)
+print("My roll numnber :",roll_number)
+print("My email id :",email_id)
+print("-----------------END-------------------")
