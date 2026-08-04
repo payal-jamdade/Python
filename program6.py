@@ -1,39 +1,37 @@
-print("\n================== CALCULATOR =====================\n")
+print("\n*************** SQUARE STAR PATTERN ****************\n")
 
-customer_name=input("Enter customer name :")
+rows = 5
 
-item1 = input("Enter Item 1 Name :")
-price1 = float(input("Enter Item 1 Price :"))
-qty1 = int(input("Enter Item 1 Quantity :"))
-amount1 = price1 * qty1
+for i in range(rows):
+    for j in range(rows):
+        print("*", end=" ")
+    print()
 
-item2 = input("\nEnter Item 2 Name :")
-price2 = float(input("Enter Item 2 Price :"))
-qty2= int(input("Enter Item 2 Quantity :"))
-amount2 = price2 * qty2
+print("\n+++++++++++++++++++++++ INVOICE PATTERN ++++++++++++++++++++++++++++++++\n")
 
-item3 = input("\nEnter Item 3 Name :")
-price3 = float(input("Enter Item 3 Price :"))
-qty3 = int(input("Enter Item 3 Quantity :"))
-amount3 = price3 * qty3
+rows = 5
+cols = 20
 
-total_bill = amount1 + amount2 + amount3
-    
-if(total_bill >= 6000):
-    discount = total_bill * 0.40
-elif(total_bill >= 3000):
-    discount = total_bill * 0.30
-elif(total_bill >= 2000):
-    discount = total_bill * 0.20
-else:
-    discount = 0
-    
-final_amount = total_bill - discount
+for i in range(rows):
+    for j in range(cols):
+        if i == 0 or i == rows - 1 or j == 0 or j == cols - 1:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
 
-print("\n======================= CUSTOMER BILL =======================\n ")
-print(customer_name,"your bill is : \n")
-print("Total Bill   :", total_bill)
-print("discount     :", discount)
-print("final amount :", final_amount)
+print("\n################### RIGHT TRIANGLE STAR PATTERN ###########################\n")
 
-print("\n********************* THANK YOU VISIT AGAIN ************************\n")
+rows = 5
+
+for i in range(1, rows + 1):
+    for j in range(i):
+        print("*", end=" ")
+    print()
+
+print("\n !!!!!!!!!!!!!!!!!!!!!!!! NUMBER TRIANGLE PATTERN !!!!!!!!!!!!!!!!!!!!!!!!!!\n")
+
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()
